@@ -1,9 +1,12 @@
 <DOCRYPE html>
     <html lang="hu">
+
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <link rel="stylesheet" href="style.css">
+        <title>Korep</title>
     </head>
+
     <body>
         <!-- 1 számos felsorolás 3 állatról, 1 felsorolás 3 növényről -->
         <ul>
@@ -14,22 +17,22 @@
                 <ul>
                     <li>Black tea</li>
                     <li>Green tea</li>
-                <ul>
-                    <li>China</li>
-                    <li>Africa</li>
-                </ul>
-                <ol>
-                    <!-- számos felsorolás -->
-                    <li>Tea</li>
-                    <li>Coffe</li>
                     <ul>
-                        <li>Tea</li>
-                        <ul>
-                            <li>Black</li>
-                            <li>Green</li>
-                        </ul>
+                        <li>China</li>
+                        <li>Africa</li>
                     </ul>
-                </ol>
+                    <ol>
+                        <!-- számos felsorolás -->
+                        <li>Tea</li>
+                        <li>Coffe</li>
+                        <ul>
+                            <li>Tea</li>
+                            <ul>
+                                <li>Black</li>
+                                <li>Green</li>
+                            </ul>
+                        </ul>
+                    </ol>
                 </ul>
             </li>
             <li>Milk</li>
@@ -39,15 +42,20 @@
             </ol>
         </ul>
         <ol>
-            <li><a href= "https://hu.wikipedia.org/wiki/Kutya">kutya</a></li>
-            <li><a href= "https://hu.wikipedia.org/wiki/Macska">cica</a></li>
-            <li><a href= "https://hu.wikipedia.org/wiki/Eur%C3%B3pai_s%C3%BCn">süni</a></li>
+            <li><a href="https://hu.wikipedia.org/wiki/Kutya">kutya</a></li>
+            <li><a href="https://hu.wikipedia.org/wiki/Macska">cica</a></li>
+            <li><a href="https://hu.wikipedia.org/wiki/Eur%C3%B3pai_s%C3%BCn">süni</a></li>
         </ol>
         <ul>
-            <li><a href= "https://hu.wikipedia.org/wiki/Kaktuszf%C3%A9l%C3%A9k">kaktusz</a></li>
-            <li><a href= "https://hu.wikipedia.org/wiki/Fa_(anyag)">fa</a></li>
-            <li><a href= "https://hu.wikipedia.org/wiki/Vir%C3%A1g_(botanika)">virág</a></li>
+            <li><a href="https://hu.wikipedia.org/wiki/Kaktuszf%C3%A9l%C3%A9k">kaktusz</a></li>
+            <li><a href="https://hu.wikipedia.org/wiki/Fa_(anyag)">fa</a></li>
+            <li><a href="https://hu.wikipedia.org/wiki/Vir%C3%A1g_(botanika)">virág</a></li>
         </ul>
-        
+
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+            Click me to display Date and Time.</button>
+
+        <p id="demo"></p>
     </body>
-</html>
+
+    </html>
