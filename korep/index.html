@@ -1,57 +1,94 @@
-<DOCRYPE html>
+<DOCTYPE html>
     <html lang="hu">
 
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Korep</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <!-- 1 számos felsorolás 3 állatról, 1 felsorolás 3 növényről -->
-        <ul>
-            <!-- sima felsorolás -->
-            <li>Cofee</li>
-            <!-- lista elemek -->
-            <li>Tea
-                <ul>
-                    <li>Black tea</li>
-                    <li>Green tea</li>
-                    <ul>
-                        <li>China</li>
-                        <li>Africa</li>
-                    </ul>
-                    <ol>
-                        <!-- számos felsorolás -->
-                        <li>Tea</li>
-                        <li>Coffe</li>
-                        <ul>
-                            <li>Tea</li>
-                            <ul>
-                                <li>Black</li>
-                                <li>Green</li>
-                            </ul>
-                        </ul>
-                    </ol>
-                </ul>
-            </li>
-            <li>Milk</li>
-            <ol>
-                <li>Hot Chocolatte</li>
-                <li>Classic Milk</li>
-            </ol>
-        </ul>
-        <ol>
-            <li><a href="https://hu.wikipedia.org/wiki/Kutya">kutya</a></li>
-            <li><a href="https://hu.wikipedia.org/wiki/Macska">cica</a></li>
-            <li><a href="https://hu.wikipedia.org/wiki/Eur%C3%B3pai_s%C3%BCn">süni</a></li>
-        </ol>
-        <ul>
-            <li><a href="https://hu.wikipedia.org/wiki/Kaktuszf%C3%A9l%C3%A9k">kaktusz</a></li>
-            <li><a href="https://hu.wikipedia.org/wiki/Fa_(anyag)">fa</a></li>
-            <li><a href="https://hu.wikipedia.org/wiki/Vir%C3%A1g_(botanika)">virág</a></li>
-        </ul>
+        <div id="cimek">
+            <h1 class="d-flex justify-content-center">h1-es címsor</h1>
+            <h2 class="d-flex justify-content-center">h2-es címsor</h2>
+        </div>
+        <p class="text-center">Ebben a paragrafusban van <i>dőlt</i>, és <b>vastagonszedett</b> szöveg.</p>
 
+        <div class="container-fluid" id="egyes">
+            <!-- 1 számos felsorolás 3 állatról, 1 felsorolás 3 növényről -->
+            <ul>
+                <!-- sima felsorolás -->
+                <li>Cofee</li>
+                <!-- lista elemek -->
+                <li>Tea
+                    <ul>
+                        <li>Black tea</li>
+                        <li>Green tea</li>
+                        <ul>
+                            <li>China</li>
+                            <li>Africa</li>
+                        </ul>
+                        <ol>
+                            <!-- számos felsorolás -->
+                            <li>Tea</li>
+                            <li>Coffe</li>
+                            <ul>
+                                <li>Tea</li>
+                                <ul>
+                                    <li>Black</li>
+                                    <li>Green</li>
+                                </ul>
+                            </ul>
+                        </ol>
+                    </ul>
+                </li>
+                <li>Milk</li>
+                <ol>
+                    <li>Hot Chocolatte</li>
+                    <li>Classic Milk</li>
+                </ol>
+            </ul>
+            <ol>
+                <li><a class="link" href="https://hu.wikipedia.org/wiki/Kutya">kutya</a></li>
+                <li><a class="link" href="https://hu.wikipedia.org/wiki/Macska">cica</a></li>
+                <li><a class="link" href="https://hu.wikipedia.org/wiki/Eur%C3%B3pai_s%C3%BCn">süni</a></li>
+            </ol>
+            <ul>
+                <li><a class="link" href="https://hu.wikipedia.org/wiki/Kaktuszf%C3%A9l%C3%A9k">kaktusz</a></li>
+                <li><a class="link" href="https://hu.wikipedia.org/wiki/Fa_(anyag)">fa</a></li>
+                <li><a class="link" href="https://hu.wikipedia.org/wiki/Vir%C3%A1g_(botanika)">virág</a></li>
+            </ul>
+        </div>
+
+        <table width="500px" height="100px">
+            <tr>
+                <th>Név: </th>
+                <td>Emily</td>
+                <td>John</td>
+                <td>Oscar</td>
+                <td>Rachel</td>
+                <td>Michael</td>
+            </tr>
+            <tr>
+                <th>Kor: </th>
+                <td>16</td>
+                <td>24</td>
+                <td>35</td>
+                <td>23</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <th>Nem: </th>
+                <td>Nő</td>
+                <td>Férfi</td>
+                <td>Férfi</td>
+                <td>Nő</td>
+                <td>Nő</td>
+            </tr>
+        </table>
+        <br>
         <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
             Click me to display Date and Time.</button>
 
